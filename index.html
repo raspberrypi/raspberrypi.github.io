@@ -1,36 +1,80 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
-    <title>Raspberry Pi on GitHub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <meta charset="utf-8">
+    <title>Raspberry Pi GitHub Organisations</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="google-site-verification" content="J4BJ0vT9ENzPZZMvCRZrYaRvLfRb-BZYvnyADmEHBMs" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      html, body, div, h1, h2, h3, p, a, code, img, ul, li {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      body {
+        line-height: 1;
+      }
+      ul {
+        list-style: none;
+      }
+      .page {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        line-height: 1.6;
+      }
+      .wrapper {
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+      }
+      .logo {
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 18px;
+      }
+      .header {
+        font-size: 2rem;
+        text-align: center;
+        padding-bottom: 32px;
+      }
+      .bold {
+        font-weight: 700;
+      }
+      .list {
+        list-style-type: disc;
+        padding-bottom: 16px;
+        padding-left: 10px;
+      }
+    </style>
   </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Raspberry Pi on GitHub</h1>
-      <h2 class="project-tagline"></h2>
-    </section>
+  <body class="page">
+    <div class="wrapper">
+      <img class="logo" alt="Raspberry Pi" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3MS42OSA5Mi4xMDkiPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDojNDZhZjRifS5jbHMtMntmaWxsOiNjZDIzNTV9PC9zdHlsZT48L2RlZnM+PHBhdGggZD0iTTcxLjUzIDUyLjk4Yy0uNDEtNC4yNjYtMi4zMjgtOC4wNi01LjA1MS0xMC4wNmExMi40NzMgMTIuNDczIDAgMCAwLTIuMzQ0LTQuNTYgMTMuOTg2IDEzLjk4NiAwIDAgMC00Ljk3Ny05LjQgNS4yNTUgNS4yNTUgMCAwIDAgMS4xNTItMS40MDVjMy4zMDYtMS40NzYgNS42MzYtNC41NzYgNS45MDctNi44ODFhOS4wNDUgOS4wNDUgMCAwIDAgMi44NTctNS45MjUgNS42NjUgNS42NjUgMCAwIDAtLjUwNi0yLjY2NyA1LjA2OCA1LjA2OCAwIDAgMCAxLjMyMS01LjIzYy0uOTg3LTIuODYtNC40NDQtNC43MTUtOS4wODgtNC45MTJBNy4zMiA3LjMyIDAgMCAwIDU1Ljc0LjIwOGExMS42OTkgMTEuNjk5IDAgMCAwLTIuNzMyLjMzNkE2LjIxOSA2LjIxOSAwIDAgMCA1MC4zMjIgMCAxMC41MSAxMC41MSAwIDAgMCA0NS4yIDEuMzk3YTQuNzA5IDQuNzA5IDAgMCAwLS42MTgtLjA0Yy0yLjMwNiAwLTQuNjEgMS41ODgtNS43NzkgMi41MzVhMTcuNTIgMTcuNTIgMCAwIDAtMy4wMzcgMy4xNjQgMTcuNTI0IDE3LjUyNCAwIDAgMC0zLjAzNy0zLjE2NGMtMS4xNjktLjk0Ny0zLjQ3My0yLjUzNS01Ljc3OS0yLjUzNmE0LjcxMiA0LjcxMiAwIDAgMC0uNjE4LjA0QTEwLjUxMiAxMC41MTIgMCAwIDAgMjEuMjA4IDBhNi4yMiA2LjIyIDAgMCAwLTIuNjg2LjU0NEExMS42OTggMTEuNjk4IDAgMCAwIDE1Ljc5LjIwOGE3LjMyIDcuMzIgMCAwIDAtNS4wNiAxLjczMmMtNC42NDUuMTk3LTguMTAzIDIuMDUzLTkuMDkgNC45MTJhNS4wNjggNS4wNjggMCAwIDAgMS4zMjEgNS4yMyA1LjY2NyA1LjY2NyAwIDAgMC0uNTA1IDIuNjY3IDkuMDQ0IDkuMDQ0IDAgMCAwIDIuODU3IDUuOTI1Yy4yNyAyLjMwNSAyLjYwMSA1LjQwNSA1LjkwNiA2Ljg4MmE1LjI1MyA1LjI1MyAwIDAgMCAxLjE1MiAxLjQwMyAxMy45ODcgMTMuOTg3IDAgMCAwLTQuOTc2IDkuNDAyIDEyLjQ3MSAxMi40NzEgMCAwIDAtMi4zNDQgNC41NTlDMi4zMjggNDQuOTIuNDEgNDguNzE0IDAgNTIuOThjLS40MDggNC4yNC43NTUgOC4xOTggMy4xMjMgMTAuNzA1YTE1LjE1OCAxNS4xNTggMCAwIDAgMi41NzQgNS45MTFBMTUuMzgzIDE1LjM4MyAwIDAgMCA5LjU4IDc4LjU3YTE1Ljg5NyAxNS44OTcgMCAwIDAgOC41NjQgNS4wODkgMjAuNzMzIDIwLjczMyAwIDAgMCA2Ljg0OCA0LjI0IDE1Ljg4OCAxNS44ODggMCAwIDAgMjEuNTQ2IDAgMjAuNzM4IDIwLjczOCAwIDAgMCA2Ljg0OC00LjI0IDE1Ljg5NyAxNS44OTcgMCAwIDAgOC41NjMtNS4wODkgMTUuMzgzIDE1LjM4MyAwIDAgMCAzLjg4NC04Ljk3MiAxNS4xNTQgMTUuMTU0IDAgMCAwIDIuNTc0LTUuOTEyYzIuMzY3LTIuNTA3IDMuNTMtNi40NjUgMy4xMjMtMTAuNzA1WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjA4IC4wMDIpIi8+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNNDQuNDQ2IDYuMThhLjM2Ni4zNjYgMCAwIDEgLjQ2NS4zOWMtLjExNiAxLjA5NS41NDcuOTU3LjcwMy43NjJhNS43MzggNS43MzggMCAwIDEgNS4xODktMi40ODkuMzY2LjM2NiAwIDAgMSAuMjUuNTljLS42NS45NjUuMDUgMS4xNDguMzEuOTc1IDIuNjU0LTEuNjYgNS4xODctMS42NjMgNi4xNi0uOTY2YS4zNjYuMzY2IDAgMCAxIC4wMjEuNTY5Yy0uOTgzLjgzNy0uNDMyIDEuMjU0LS4wODUgMS4xMjcgMi42OTUtLjk1MiA2LjQxNi0uMTEgNy43MTUuOTg3YS4zNjkuMzY5IDAgMCAxIC4wMDkuNTU5IDcuMzEyIDcuMzEyIDAgMCAwLTIuODE1IDQuOTFjLS4wNzMuNjQ2Ljk5OC41MSAxLjQ1LjM5M2EuMzY2LjM2NiAwIDAgMSAuNDU2LjM0MmMuMDQxIDEuNTUyLTEuNDI3IDMuMjU4LTMuNjEgNC43MTctLjI5My4xOTUtLjI1MS42NjQuNDE2LjY4MWEuMzYyLjM2MiAwIDAgMSAuMzExLjU0NWMtLjc3OSAxLjQ0NS0xLjgzOCAyLjgwNi01LjQ0NSAzLjc0YS4zNy4zNyAwIDAgMC0uMDUuNjk4LjM1NC4zNTQgMCAwIDEgLjExNS42MjVjLTMuNTkyIDMuMDg1LTEyLjY5NSAxLjg2OS0xMy44NS0zLjMyNGEuMzY1LjM2NSAwIDAgMSAuMDY1LS4yOTcgMzQuNjAzIDM0LjYwMyAwIDAgMSAxNS4wOTYtMTEuNDg2LjI4Ny4yODcgMCAwIDAtLjE0Mi0uNTUzIDI0LjY4NSAyNC42ODUgMCAwIDAtMTYuMzk0IDkuODg0LjM3LjM3IDAgMCAxLS40Ny4xMDZjLTUuODM1LTMuMDEyLTEuMDQzLTExLjkwOCA0LjEzLTEzLjQ4NVpNMTAuMTM5IDIwLjI3MmEuMzYyLjM2MiAwIDAgMSAuMzEtLjU0NWMuNjY4LS4wMTcuNzEtLjQ4Ni40MTctLjY4MS0yLjE4NC0xLjQ2LTMuNjUxLTMuMTY1LTMuNjEtNC43MTdhLjM2Ni4zNjYgMCAwIDEgLjQ1Ni0uMzQyYy40NTIuMTE3IDEuNTIzLjI1MyAxLjQ1LS4zOTNhNy4zMTIgNy4zMTIgMCAwIDAtMi44MTUtNC45MS4zNjkuMzY5IDAgMCAxIC4wMS0uNTU5YzEuMjk3LTEuMDk3IDUuMDE5LTEuOTM5IDcuNzE0LS45ODcuMzQ3LjEyNy44OTctLjI5LS4wODUtMS4xMjdhLjM2Ni4zNjYgMCAwIDEgLjAyMi0uNTY5Yy45NzItLjY5NyAzLjUwNC0uNjk0IDYuMTYuOTY2LjI1OS4xNzMuOTU5LS4wMS4zMDktLjk3NGEuMzY2LjM2NiAwIDAgMSAuMjUtLjU5MSA1LjczOCA1LjczOCAwIDAgMSA1LjE4OSAyLjQ4OWMuMTU2LjE5NS44MTkuMzMzLjcwMy0uNzYzYS4zNjYuMzY2IDAgMCAxIC40NjUtLjM4OWM1LjE3MyAxLjU3NyA5Ljk2NCAxMC40NzMgNC4xMyAxMy40ODVhLjM3LjM3IDAgMCAxLS40Ny0uMTA2QTI0LjY4NSAyNC42ODUgMCAwIDAgMTQuMzUgOS42NzVhLjI4Ny4yODcgMCAwIDAtLjE0Mi41NTMgMzQuNjAzIDM0LjYwMyAwIDAgMSAxNS4wOTUgMTEuNDg2LjM2NC4zNjQgMCAwIDEgLjA2Ni4yOTdjLTEuMTU2IDUuMTkzLTEwLjI1OSA2LjQwOS0xMy44NSAzLjMyNGEuMzU0LjM1NCAwIDAgMSAuMTE1LS42MjUuMzcuMzcgMCAwIDAtLjA1LS42OThjLTMuNjA3LS45MzQtNC42NjYtMi4yOTUtNS40NDUtMy43NFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC4wOCAuMDAyKSIvPjxwYXRoIGNsYXNzPSJjbHMtMiIgZD0iTTU4Ljc1NCAzNi4xNDZjMS40OTYgMy45OC4zMyA1Ljg5NC0zLjIxOSAzLjg2OGEyNS40NCAyNS40NCAwIDAgMS03LjQ1NC02LjI0OWMtMi42NzQtMy4xNzYtLjkzNi00LjU5MSAzLjI3NS0zLjgyOGExMS4zNjggMTEuMzY4IDAgMCAxIDcuMzk4IDYuMjA5Wk00Mi44MzQgMzEuNjY4YzUuMDc2IDQuMjE5LS43NCA3LjIwNS03LjA3IDcuMjA1cy0xMi4xNDQtMi45ODYtNy4wNjgtNy4yMDVhMTEuMjg2IDExLjI4NiAwIDAgMSAxNC4xMzggMFpNMTIuNzc2IDM2LjE0NmExMS4zNjggMTEuMzY4IDAgMCAxIDcuMzk4LTYuMjFjNC4yMTEtLjc2MiA1Ljk0OS42NTMgMy4yNzUgMy44M2EyNS40NCAyNS40NCAwIDAgMS03LjQ1NCA2LjI0OGMtMy41NSAyLjAyNi00LjcxNi4xMTItMy4yMi0zLjg2OFpNNS40MzMgNTguMjY0YTExLjM2NCAxMS4zNjQgMCAwIDEgLjg0NC05LjY3YzEuODc1LTMuMTkxIDMuNzYzLTMuMDY0IDQuNTEyLS4zNmExNi45NTQgMTYuOTU0IDAgMCAxLS45NzcgMTEuMTc0Yy0xLjM4OSAyLjc2LTMuMTI2IDEuODI3LTQuMzc5LTEuMTQ0Wk0xOC45NTcgNzguOTMyYTExLjI5NyAxMS4yOTcgMCAwIDEtOC40OTgtMTAuMDgyYy43MDQtMTYuMzgyIDI0LjMxNCAxMi44NzQgOC40OTggMTAuMDgyWk0xOS40MzcgNTguNTI4Yy0zLjk1OS0yLjI4NS01LjAwNy03Ljg4My0yLjM0LTEyLjUwMnM4LjAzOS02LjUxMSAxMS45OTgtNC4yMjUgNS4wMDcgNy44ODQgMi4zNCAxMi41MDMtOC4wMzkgNi41MS0xMS45OTggNC4yMjRaTTQyLjM3MiA4NS4xODRhMTEuMzA3IDExLjMwNyAwIDAgMS0xMy4yMTQgMGMtMy45MjMtMi43MDkuMDI0LTUuODI2IDYuNjA3LTUuODI2czEwLjUzIDMuMTE3IDYuNjA3IDUuODI2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLjA4IC4wMDIpIi8+PGVsbGlwc2UgY2xhc3M9ImNscy0yIiBjeD0iMzUuODQ1IiBjeT0iNjcuMzc4IiByeD0iOS4xOSIgcnk9IjcuODc3Ii8+PHBhdGggY2xhc3M9ImNscy0yIiBkPSJNNDAuMDk1IDU0LjMwNGMtMi42NjctNC42Mi0xLjYyLTEwLjIxNyAyLjM0LTEyLjUwM3M5LjMzLS4zOTQgMTEuOTk4IDQuMjI1IDEuNjE5IDEwLjIxNy0yLjM0IDEyLjUwMmMtMy45NiAyLjI4Ni05LjMzMS4zOTUtMTEuOTk4LTQuMjI0Wk01Mi41NzMgNzguOTMyYy0xNS44MTYgMi43OTIgNy43OTQtMjYuNDY0IDguNDk4LTEwLjA4MmExMS4yOTcgMTEuMjk3IDAgMCAxLTguNDk4IDEwLjA4MlpNNjYuMDk2IDU4LjI2NGMtMS4yNTIgMi45NzEtMi45OSAzLjkwNC00LjM3OCAxLjE0NGExNi45NTQgMTYuOTU0IDAgMCAxLS45NzctMTEuMTc1Yy43NDktMi43MDMgMi42MzYtMi44MyA0LjUxMi4zNmExMS4zNjQgMTEuMzY0IDAgMCAxIC44NDMgOS42NzFaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSguMDggLjAwMikiLz48L3N2Zz4=" width="80">
+      <h1 class="header">
+        <span class="bold">Raspberry Pi</span> Github Organisations
+      </h1>
+      <p>The following is a full list of official GitHub Organisations for both <a href="https://raspberrypi.com">Raspberry Pi</a> Ltd, and the <a href="https://raspberrypi.org">Raspberry Pi Foundation</a>. Repositories and projects under these organisation are offically supported.</p>
+      &nbsp;
+      <p><strong>Raspberry Pi Ltd</strong></p>
+      <ul class="list" id="index1">
+          <li><a href="https://github.com/raspberrypi">Raspberry Pi</a></li>
+          <li><a href="https://github.com/RPi-Distro">RPi-Distro</a></li>
+          <li><a href="https://github.com/raspberrypi-ui">raspberrypi-ui</a></li>
+      </ul>
+      <p><strong>Raspberry Pi Foundation</strong></p>
+      <ul class="list" id="index2">
+          <li><a href="https://github.com/raspberrypifoundation">Raspberry Pi Foundation</a></li>
+          <li><a href="https://github.com/raspberrypilearning">Raspberry Pi Learning</a></li>
+      </ul>
+      <p><a href="https://www.raspberrypi.com/licensing/">Licence information</a> for code, documents, and associated files.</p>
+    </div>
 
-    <section class="main-content">
-      <ul>
-<li><a href="https://github.com/raspberrypi">Raspberry Pi</a></li>
-<li><a href="https://github.com/raspberrypifoundation">Raspberry Pi Foundation</a></li>
-<li><a href="https://github.com/raspberrypilearning">Raspberry Pi Learning</a></li>
-<li><a href="https://github.com/RPi-Distro">RPi-Distro</a></li>
-<li><a href="https://github.com/raspberrypi-ui">raspberrypi-ui</a></li>
-</ul>
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
   </body>
 </html>
